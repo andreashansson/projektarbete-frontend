@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+	//effekt när du håller över meny knapparna
 	$("nav div").on("mouseenter", function() {
 
 		$(this).css("box-shadow", "5px 5px 5px #0A0A2A");
@@ -8,6 +9,7 @@ $(document).ready(function() {
 
 	});
 
+	//tar bort effkten när du inte håller över meny knapparna
 	$("nav div").on("mouseleave", function() {
 
 		$(this).css("box-shadow", "0px 0px 0px white");
@@ -33,6 +35,7 @@ $(document).ready(function() {
 		$(this).animate({"width": "200px"}, 600);
 	});
 
+	//Flyttar runt copyright texten när du tar musen över texten
 	$("#copy").on("mouseenter", function() {
 
 		$(this).animate({"top":"-10px"});
@@ -42,6 +45,7 @@ $(document).ready(function() {
 
 	});
 
+	//får hela footern att hoppa runt lite när du håller musen över footern
 	$("footer").on("mouseenter", function() {
 
 		$("footer").animate({"top":"-20px"}, 200);
@@ -66,7 +70,7 @@ $(document).ready(function() {
 
 	});
 
-	//
+	//byter plats på bilderna när du klickar på div taggen med id one
 	$("#one").click(function() {
 
 		$("#imgone").attr("src", "img/brant.jpg");
@@ -75,13 +79,14 @@ $(document).ready(function() {
 
 	});
 
+	//Ändrar border radius på bilderna när du klickar på knappen med id two
 	$("#two").click(function() {
 
 		$(".rightimg").css("border-radius", "100px");
 
 	});
 
-	//Gör elementet med id three klickbart
+	//Bilderna rör sig in mot vänster och sen tillbaka när du klickar på div taggen med id tre
 	$("#three").click(function() {
 
 		$(".rightimg").css("position", "relative");
@@ -91,7 +96,7 @@ $(document).ready(function() {
 
 	});
 
-	
+	//klicka på center sectionen så ändras bakgrundsbilden till wood.jpg
 	$(".center").click(function() {
 
 		$("body").css("background-image", "url(img/wood.jpg");
@@ -106,6 +111,7 @@ $(document).ready(function() {
 
 	});
 
+	//dubbelklicka på headern så byter left klassen och right klassen plats.
 	$("header").dblclick(function() {
 
 		var temp1;
